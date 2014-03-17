@@ -5,13 +5,13 @@
 		<title> Titulo </title>
 		<script> 
 
-			function suporteCanvas(){
-				return !!document.createElement("canvas").getContext;
-			}
-
-			window.onload = function(){
-				alert(suporteCanvas());
-			}
+				window.onload = function(){
+					if(navigator.geolocation){
+						alert("Ok.. tem o objeto \"navigator\"");
+					}else{
+						alert("Sem suporte")
+					}
+				}
 
 		</script>
 	</head>
