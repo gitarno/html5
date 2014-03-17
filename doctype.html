@@ -6,12 +6,12 @@
 		<script> 
 
 			function suporteCanvas(){
-
 				return !!document.createElement("canvas").getContext;
-
 			}
 
-			
+			window.onload = function(){
+				alert(suporteCanvas());
+			}
 
 		</script>
 	</head>
