@@ -1,0 +1,25 @@
+@charset "utf-8";
+@media screen and (max-width: 400px) {
+	body{
+		background: #c4c500;
+	}
+} 
+@media screen and (max-height: 200px) {
+	body{
+		background: #c70000;
+	}
+} 
+@media print{
+	*{
+		color: #c70000;
+	}
+	nav{
+		position: absolute;
+		height: 0px;
+		width: 0px;
+		overflow: hidden;;
+		display:hidden;
+		color: #fff;
+	}
+}
+
