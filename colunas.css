@@ -1,0 +1,12 @@
+/* Colunas */
+#div4 { 
+	/* borda inserida para facilitar o entedimento */ 
+	border: 1px solid #699; 
+	-moz-column-count: 2; 
+	-moz-column-gap: 20px; 
+	-moz-column-rule: 1px solid #6e8eb9; 
+	 
+	-webkit-column-count: 2; 
+	-webkit-column-gap: 20px; 
+	-webkit-column-rule: 1px solid #6e8eb9; 
+} 
