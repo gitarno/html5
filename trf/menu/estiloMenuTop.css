@@ -1,0 +1,90 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#menuR{
+	position: fixed;
+	/*top*/
+	width:96%;
+	padding-left:2%; 
+	padding-right:2%;
+	height:auto;
+	overflow:hidden;
+	/*COR */
+	background: #ececec;
+	box-shadow: 0 0 10px #000;
+	z-index:2000;
+	/* transition */
+	transition:all ease 0.5s;
+	-webkit-transition:all ease 0.5s;
+	-moz-transition:all ease 0.5s;
+}
+#menuR span:first-child{
+	display:none;
+}
+section{
+	position: relative;
+	float: left;
+	z-index:1;
+	margin-top:35px; 
+}
+#menuR ul {
+	position:relative;
+	float: right;
+}
+#menuR ul li{
+	position: relative;
+	display: inline;
+	float: left;
+}
+#menuR ul li a{
+	position: relative;
+	float: left;
+	padding: 2px;
+	margin-left: 1px;
+	background: #cecece;
+
+}
+#menuR ul li a:hover{
+	background-color:#cecece; 
+}
+@media screen and (max-width: 600px)and(min-width: 481px) {
+	#menuR ul li a{
+		font-size: 0px;
+		background: url("http://goo.gl/BK8scU");
+		min-width: 30px;
+		min-height: 30px;
+		width: 30px;
+		height:30px;
+		text-overflow:ecllipse;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 480px) {
+	#menuR {
+		height: 30px;
+		overflow: hidden;
+	}
+	#menuR:hover {
+		height: 200px;
+	}
+	#menuR ul{
+		width: 100%;
+		margin-top:30px; 
+		float: left;
+	}
+	#menuR ul li{
+		width: 100%;
+		float: left;
+		clear: both;
+		display: block;
+	}
+	#menuR ul li a{
+		width: 94%;
+		padding-left:3%;  
+		padding-right:3%;
+		margin-left: 0px;
+		margin-top:1px;
+	}
+}

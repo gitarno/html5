@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+
+</head>
+
+<body>
+<form> 
+<fieldset> 
+	<legend> Itens</legend>
+    <input type="tel" /> 
+    <input type="number" min="10" max="200" step="2" />
+    
+    
+    <input type="time" /> 
+    <input type="week" /> 
+    <input type="datetime-local" /> 
+    <input type="month" /> 
+    <input type="datetime" /> 
+    <input type="date" /> 
+    <input type="search" /> 
+    <input type="email" />
+    <input type="url" /> 
+    <input type="color"  /> 
+    <input type="datalist" /> 
+    <input type="output" /> 
+</fieldset>
+
+<fieldset> 
+	<legend> testando </legend>
+	Nome: <input type="text" name="nome" required="required" autofocus="autofocus"/> <br />
+    Nome: <input type="email" name="nome" autocomplete="off"   placeholder="Comentarios" /> <br />
+    Nome: <textarea name="nome"maxlength="100" > </textarea></ <br />
+    Codigo: <input type="password" pattern="[A-Z a-z]{5}" required="required"/>
+    <input type="range" max="255" min="0" step="5"  />
+
+  
+    <input type="submit" value="Enviar" />
+    
+</fieldset>
+</form>
+
+<form oninput="x.value=parseInt(a.value)/parseInt(b.value)">
+    <input type="range" id="a" value="50">100 +
+    <input type="number" id="b" value="50">=
+    <output name="x" for="a b"></output>
+</form>
+
+
+</body>
+</html>
